@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{PCA:Avaliação Sensorial de Café}
+\author{
+    Kauan Toledo Camargo\\
+    Lucas Rocha Gaspar\\
+}
+\date{}
+
+\renewcommand{\figurename}{Figura}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+O setor cafeeiro é uma indústria global de grande importância econômica e cultural, com uma variedade incrível de sabores e aromas derivados das nuances do cultivo, processamento e torrefação dos grãos. Nesse contexto, o Coffee Quality Institute (CQI) desempenha um papel crucial na promoção da qualidade do café, incentivando padrões elevados que beneficiam tanto os produtores quanto os consumidores. Uma parte essencial dessa busca por qualidade envolve a avaliação sensorial, onde profissionais e entusiastas buscam compreender e quantificar as características distintas que tornam cada café único.
+
+A análise de dados desempenha um papel vital nesse cenário, permitindo a extração de informações significativas a partir de conjuntos de dados complexos. Uma técnica valiosa nesse contexto é a Análise de Componentes Principais (PCA), que é particularmente útil para explorar padrões e variações em dados multidimensionais, como os provenientes da avaliação sensorial de café.
+
+\section{Importância do PCA na Avaliação Sensorial do Café:}
+
+\subsection{Redução da Dimensionalidade}
+
+Os dados sensoriais muitas vezes envolvem múltiplos atributos, cada um contribuindo para a complexidade do perfil de sabor. PCA ajuda a reduzir essa dimensionalidade, preservando ao mesmo tempo a maior quantidade possível de variação nos dados. No contexto do café, isso significa identificar as características sensoriais mais influentes que definem a qualidade.
+Identificação de Padrões Latentes:
+
+PCA destaca padrões subjacentes nos dados, revelando correlações entre diferentes atributos sensoriais. Isso é crucial para compreender como características específicas interagem para criar perfis sensoriais únicos. Por exemplo, pode revelar como a acidez e o corpo se relacionam ou como o aroma influencia o sabor.
+
+\subsection{Visualização e Interpretação}
+
+A representação gráfica dos resultados do PCA, como scatter plots, fornece uma maneira intuitiva de visualizar a distribuição dos cafés em um espaço de menor dimensão. Essa visualização simplificada é valiosa para a interpretação dos resultados, permitindo uma compreensão mais profunda dos relacionamentos entre os cafés avaliados.
+Identificação de Grupos ou Clusters:
+
+Ao aplicar PCA seguido de técnicas de agrupamento, como o Hierarchical Clustering, é possível identificar grupos naturais de cafés com perfis sensoriais semelhantes. Isso é crucial para entender a diversidade de sabores no café e pode ter implicações significativas para a segmentação de mercado.
+
+\section{Processo de Pontuação na Avaliação Sensorial do Café}
+
+A avaliação sensorial do café é um processo intricado e meticuloso que busca quantificar as características distintas dos grãos, resultando em uma pontuação global representativa da qualidade percebida. O método de pontuação, frequentemente utilizado em competições de café e pelo Coffee Quality Institute (CQI), é projetado para oferecer uma avaliação objetiva e comparativa.
+
+\begin{enumerate}
+    \item Total de Pontos: O resultado final de uma avaliação sensorial muitas vezes é expresso como um `Total de Pontos', representando a qualidade geral do café. Essa pontuação é derivada da avaliação de vários atributos individuais, cada um contribuindo para a experiência global do café.
+    \item Atributos Individuais: Os atributos individuais representam características específicas do café que são avaliadas durante o processo sensorial.
+    \item Metodologia de Pontuação: Os atributos individuais são frequentemente pontuados em uma escala, com os avaliadores atribuindo notas com base em critérios predefinidos.
+    \item Peso dos Atributos: Cada atributo pode ter um peso diferente na pontuação total, refletindo a importância percebida de cada característica para a qualidade geral.
+    \item Total de Pontos e Classificação: A pontuação total é a soma ponderada dos pontos atribuídos a cada atributo. Essa pontuação total é frequentemente usada para classificar e comparar cafés.
+\end{enumerate}
+
+\section{Importância na Indústria}
+
+O processo de pontuação na avaliação sensorial do café não apenas fornece uma maneira sistemática de avaliar a qualidade, mas também é crucial para a indústria do café. Cafés bem pontuados podem ser comercializados como produtos de alta qualidade, proporcionando aos produtores, torrefadores e consumidores uma maneira objetiva de entender e apreciar a complexidade do café. Além disso, competições de café frequentemente utilizam métodos de pontuação para destacar os melhores grãos e reconhecer os produtores de destaque na indústria cafeeira.
+
+\section{Resultado do PCA}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{Figure_1.png}
+    \caption{Gráfico de pares}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figure_2.png}
+    \caption{Mapa de calor da matriz de correlação}
+    \includegraphics[width=0.65\textwidth]{Figure_3.png}
+    \caption{Gráfico de dispersão}
+\end{figure}
+
+\begin{center}
+    \url{https://github.com/Lazy-Machine/PCA_coffee}
+\end{center}
+\end{document}
